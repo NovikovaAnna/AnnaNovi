@@ -1,0 +1,58 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #f8f9fa; /* Светло-серый фон, как на образце */
+    border-bottom: 1px solid #dee2e6; /* Граница снизу */
+}
+
+.header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333; /* Темно-серый цвет текста */
+    cursor: pointer;
+}
+
+/* Стиль для меню */
+.menu {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    margin-right: 1rem;
+}
+
+.menu li:last-child {
+    margin-right: 0;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333; /* Темно-серый цвет текста, как у логотипа */
+    padding: 0.25rem 0;
+    transition: color 0.3s ease;
+}
+
+.menu a:hover {
+    color: #007bff; /* Синий цвет при наведении */
+}
+
+.button-contact {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    background-color: #ffffff; /* Белый фон кнопки */
+    color: #333; /* Темно-серый цвет текста кнопки */
+    border: 1px solid #dee2e6; /* Граница кнопки */
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.button-contact:hover {
+    background-color: #e9ecef; /* Светло-серый фон при наведении */
+    color: #007bff; /* Синий цвет текста при наведении */
+}

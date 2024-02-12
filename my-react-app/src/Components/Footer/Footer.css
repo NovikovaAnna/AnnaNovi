@@ -1,0 +1,49 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+    background-color: #f8f9fa; /* Цвет фона аналогичный header */
+    border-top: 1px solid #dee2e6; /* Граница сверху */
+}
+
+/* Стилизация меню в футере */
+.menu {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.menu li {
+    margin: 0 1rem; /* Отступы между элементами меню */
+    font-size: 1rem; /* Размер шрифта для элементов меню */
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333; /* Цвет текста элементов меню */
+    font-weight: normal; /* Вес шрифта для элементов меню */
+    transition: color 0.3s ease; /* Плавный переход цвета при наведении */
+}
+
+.menu a:hover {
+    color: #007bff; /* Цвет текста при наведении */
+}
+
+/* Ответственное поведение для мобильных устройств */
+@media (max-width: 768px) {
+    .footer {
+        padding: 1rem;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu li {
+        margin: 0.5rem 0; /* Вертикальные отступы для мобильных устройств */
+    }
+}
